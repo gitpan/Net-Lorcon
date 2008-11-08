@@ -1,5 +1,13 @@
 Revision history for Perl extension Net::Lorcon.
 
+0.02
+   - update: getchan() is now getchannel()
+   - more tests
+   - more injection drivers supported
+   - some examples written
+   - new constants
+   - no need for include linux/wireless.h anymore
+
 0.01  Sun Jan 21 21:27:16 2007
-	- original version
+   - original version
 

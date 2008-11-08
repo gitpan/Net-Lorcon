@@ -15,7 +15,7 @@ my $tx = Net::Lorcon->new($ENV{LORCON_IF}, $ENV{LORCON_INJ});
 
 ok($tx);
 # Can't change the value, just check it returns something..
-ok($tx->getchan);
+ok($tx->getchannel);
 # Ditto..
 ok($tx->getmode);
 

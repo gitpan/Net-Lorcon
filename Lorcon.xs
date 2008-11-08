@@ -4,9 +4,6 @@
 
 #include "ppport.h"
 
-/* Yuck. (So Perl can get at the IW_MODE_* constants) */
-#include <linux/wireless.h>
-
 #include <tx80211.h>
 #include <tx80211_errno.h>
 
@@ -96,9 +93,8 @@ tx80211_setchannel(in_tx, in_chan)
     Net_Lorcon *in_tx
     int in_chan
 
-# WTF?! - The header file calls it getchannel, but it's actually getchan..
 int
-tx80211_getchan(in_tx)
+tx80211_getchannel(in_tx)
     Net_Lorcon *in_tx
 
 int

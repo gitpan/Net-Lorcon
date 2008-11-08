@@ -1,15 +1,19 @@
 Changes
+examples/getcardlist.pl
+examples/inject.pl
+fallback/const-c.inc
+fallback/const-xs.inc
+lib/Net/Lorcon.pm
 Lorcon.xs
 Makefile.PL
 MANIFEST
 ppport.h
 README
-typemap
 t/01-use.t
 t/02-init.t
 t/03-device.t
 t/04-root.t
-fallback/const-c.inc
-fallback/const-xs.inc
-lib/Net/Lorcon.pm
+t/05-pod-coverage.t
+t/06-test-pod.t
+typemap
 META.yml                                 Module meta-data (added by MakeMaker)

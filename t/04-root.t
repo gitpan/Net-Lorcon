@@ -20,7 +20,7 @@ my $packet = "\x80\x00\x00\x00\xff\xff\xff\xff\xff\xff\x00\x02\x02\xe2\xc4\xef\x
 
 ok($tx);
 ok(!$tx->open && !$!, "Open device");
-ok(!$tx->setmode(IW_MODE_MONITOR));
+ok(!$tx->setfunctionalmode(TX80211_FUNCMODE_INJECT));
 
 my $t = $tx->txpacket($packet);
 
